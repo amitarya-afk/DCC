@@ -1,0 +1,33 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/services", "destination": "/services.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/gallery", "destination": "/gallery.html" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/career", "destination": "/career.html" },
+    { "source": "/package", "destination": "/package.html" },
+    { "source": "/pet-health", "destination": "/pet-health.html" },
+    { "source": "/our-pet-care-doctors", "destination": "/our-pet-care-doctors.html" },
+    { "source": "/tele-health-booking", "destination": "/tele-health-booking.html" },
+    { "source": "/booking-inside-one", "destination": "/booking-inside-one.html" },
+    { "source": "/terms-and-conditions", "destination": "/terms-and-conditions.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/refund-policy", "destination": "/refund-policy.html" },
+    { "source": "/referral", "destination": "/referral.html" },
+    { "source": "/press-and-media", "destination": "/press-and-media.html" },
+    { "source": "/crm", "destination": "/crm.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}
